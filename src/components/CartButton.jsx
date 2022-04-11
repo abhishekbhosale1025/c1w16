@@ -27,17 +27,22 @@ const CartButton = () => {
           
     }
 
-<>
-      <button onClick={()=>handleDecrement(1)}>-</button>
-      
-      <button onClick={()=>handleIncrement(1)}>+</button>
-</>
+
+     
+       
+
 
 
 
  
   {/* count with - and  + button */}
-  
+
+  <div>
+    <button onClick={()=>handleDecrement(1)}>-</button>
+      {/* <p className="count-item">{count}</p> */}
+    <button onClick={()=>handleIncrement(1)}>+</button>
+  </div>
+
   </>;
 };
 export default CartButton
