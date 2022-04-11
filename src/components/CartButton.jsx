@@ -14,8 +14,12 @@ const CartButton = () => {
     }
 
     const handleDecrement = (value)=>
-    {
-        setCount(count-value)
+    {  
+       {
+         count>0
+          ? setCount(count-value)
+          : setCount(0)
+       } 
     }
 
 
@@ -23,18 +27,9 @@ const CartButton = () => {
   {/* add to cart button */}
     {count===0
       ?  <button style={{backgroundColor:'blue',color:'white',width:'100%',border:'none'}}>Add to Cart</button>
-      :  <p className="count-item">{count}</p>
-          
+      :  <p className="count-item">{count}</p>      
     }
 
-
-     
-       
-
-
-
-
- 
   {/* count with - and  + button */}
 
   <div>
