@@ -22,7 +22,7 @@ const CartButton = () => {
   return <>
   {/* add to cart button */}
     {count===0
-      ?  <button>Add to Cart</button>
+      ?  <button style={{backgroundColor:'blue',color:'white',width:'100%',border:'none'}}>Add to Cart</button>
       :  <p className="count-item">{count}</p>
           
     }
